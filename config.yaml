@@ -1,0 +1,44 @@
+# =========================================================
+# Face Recognition Door Lock - Configuration
+# Change values here — no need to touch the Python code.
+# =========================================================
+
+# Camera source:
+#   0            -> default/first USB webcam
+#   1, 2 ...     -> other connected webcams
+#   "http://<phone-ip>:8080/video"  -> IP Webcam app (Android) stream URL
+#   "rtsp://..." -> IP camera / CCTV RTSP stream
+camera_source: 0
+
+# Face match strictness.
+# Lower value = stricter (fewer false accepts, may reject valid faces in bad light)
+# Higher value = looser (easier to match, higher risk of false accepts)
+# 0.5 is a good starting point.
+match_tolerance: 0.5
+
+# How long the door stays "unlocked" after a successful match (seconds)
+unlock_duration_seconds: 5
+
+# Minimum gap between two unlock triggers, to avoid spamming the lock (seconds)
+cooldown_seconds: 10
+
+# ---------------------------------------------------------
+# LOCK HARDWARE TYPE — pick ONE:
+#   none            -> no hardware, just prints Access Granted/Denied (for testing)
+#   gpio_relay      -> Raspberry Pi GPIO pin driving a relay module
+#   arduino_serial  -> Arduino/microcontroller connected via USB serial
+#   mqtt            -> wireless trigger via MQTT (good for ESP32 / smart home)
+# ---------------------------------------------------------
+lock_type: "none"
+
+# --- Settings used only if lock_type: gpio_relay ---
+gpio_pin: 18
+
+# --- Settings used only if lock_type: arduino_serial ---
+serial_port: "/dev/ttyUSB0"   # Windows example: "COM3"
+baud_rate: 9600
+
+# --- Settings used only if lock_type: mqtt ---
+mqtt_broker: "localhost"
+mqtt_port: 1883
+mqtt_topic: "door/lock"

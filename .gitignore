@@ -1,0 +1,17 @@
+# Private data - never push people's faces to a public repo
+known_faces/*.jpg
+known_faces/*.jpeg
+known_faces/*.png
+!known_faces/.gitkeep
+
+# Cached face encodings
+encodings.pkl
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Environment / secrets
+.env

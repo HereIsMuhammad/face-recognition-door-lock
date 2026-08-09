@@ -1,0 +1,23 @@
+# IMPORTANT: these exact versions are pinned on purpose.
+# Newer opencv-python (5.x) requires numpy>=2, but dlib (compiled from the
+# precompiled Windows wheels most people use) works with numpy<2.
+# Mixing them causes: "RuntimeError: Unsupported image type, must be 8bit
+# gray or RGB image." even though the image is fine.
+# Stick to this combination unless you know what you're doing.
+numpy==1.26.4
+opencv-python==4.9.0.80
+PyYAML==6.0.1
+face_recognition==1.3.0
+
+# dlib is NOT listed here on purpose - pip install dlib tries to compile
+# from source and often fails/crashes on Windows. Instead, download a
+# precompiled wheel for your exact Python version from:
+# https://github.com/z-mahmud22/Dlib_Windows_Python3.x
+# then run: pip install dlib-<version>-<your-python-tag>-win_amd64.whl
+
+# The following are OPTIONAL - only install the one matching your
+# lock_type in config.yaml:
+#
+# RPi.GPIO      (lock_type: gpio_relay -> Raspberry Pi only)
+# pyserial      (lock_type: arduino_serial)
+# paho-mqtt     (lock_type: mqtt)
