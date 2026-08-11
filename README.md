@@ -27,7 +27,7 @@ Arduino, or an MQTT/IoT setup.
 
 ## 🎥 Demo
 
-![Face Recognition Door Lock in action](assets/face-lock.png)
+![Face Recognition Door Lock in action](assets/demo-screenshot.png)
 
 *Real-time detection: a registered face is matched and access is granted.*
 
