@@ -25,6 +25,12 @@ Arduino, or an MQTT/IoT setup.
 
 *Raspberry Pi 4 Model B, the recommended board for real hardware deployment. Image courtesy of Raspberry Pi Ltd.*
 
+## 🎥 Demo
+
+![Face Recognition Door Lock in action](assets/face-lock.png)
+
+*Real-time detection: a registered face is matched and access is granted.*
+
 ## ✨ Features
 
 - Real-time face detection & recognition from a webcam / IP camera
