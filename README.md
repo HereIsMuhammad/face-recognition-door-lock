@@ -1,3 +1,9 @@
+<div align="center">
+
+# 🔒 Face Recognition Door Lock
+
+### A low-cost, open-source door lock system powered by Python, OpenCV, and `face_recognition`.
+
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org/)
@@ -10,7 +16,7 @@
 [![macOS](https://img.shields.io/badge/macOS-Supported-000000?style=for-the-badge&logo=apple&logoColor=white)]()
 [![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)]()
 
-# Face Recognition Door Lock 🔒
+</div>
 
 A low-cost, open-source door lock system powered by Python + OpenCV +
 `face_recognition`. Show your face to a camera, if it matches a saved
@@ -21,15 +27,23 @@ is **optional and swappable**, you can run it in pure simulation mode on
 your laptop with zero extra hardware, or connect it to a Raspberry Pi,
 Arduino, or an MQTT/IoT setup.
 
+<div align="center">
+
 ![Raspberry Pi 4 Model B](assets/raspberry-pi-4.webp)
 
 *Raspberry Pi 4 Model B, the recommended board for real hardware deployment. Image courtesy of Raspberry Pi Ltd.*
 
+</div>
+
 ## 🎥 Demo
+
+<div align="center">
 
 ![Face Recognition Door Lock in action](assets/demo-screenshot.png)
 
 *Real-time detection: a registered face is matched and access is granted.*
+
+</div>
 
 ## ✨ Features
 
@@ -198,3 +212,9 @@ for high-security applications.
 ## 📄 License
 
 MIT, free to use, modify, and share. Contributions and PRs welcome!
+
+<div align="center">
+
+### ⭐ If this repo helped you, consider giving it a star!
+
+</div>
